@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Страница с информацией о продукте">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Товар</title>
+</head>
+<body>
+
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <header class="site-header">
+        <a href="../index.html" class="site-header__link">
+            <span class="site-header__name"><span class="site-header__accent">PC</span>Market</span>
+        </a>
+        <nav class="site-nav">
+            <ul class="site-nav__list">
+                <li class="site-nav__item">
+                    <a href="../index.html#advantages" class="site-nav__link">Преимущества</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="catalog.html" class="site-nav__link">Каталог</a> 
+                </li>
+                <li class="site-nav__item">
+                    <a href="order.html" class="site-nav__link">Заказ</a> 
+                </li>
+                <li class="site-nav__item">
+                    <a href="aboutUs.html" class="site-nav__link">О нас</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="reviews.html" class="site-nav__link">Отзывы</a>
+                </li>
+                <li class="site-nav__item">
+                    <a href="contacts.html" class="site-nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-page" id="main-content" tabindex="-1">
+        <article class="product-details">
+            <h1 class="product-details__title">Игровой ПК PcMarket Ultra</h1>
+            
+            <div class="product-details__grid">
+                <picture class="product-details__media">
+                    <source type="image/webp"
+                            srcset="../assets/img/gaming-pc-360.webp 360w, ../assets/img/gaming-pc-600.webp 600w, ../assets/img/gaming-pc.webp 736w"
+                            sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1439px) calc((100vw - 160px) / 2), 620px">
+                    <img class="product-details__image" src="../assets/img/gaming-pc.jpg"
+                         srcset="../assets/img/gaming-pc-360.jpg 360w, ../assets/img/gaming-pc-600.jpg 600w, ../assets/img/gaming-pc.jpg 736w"
+                         sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1439px) calc((100vw - 160px) / 2), 620px"
+                         alt="Игровой ПК PcMarket Ultra" width="736" height="981">
+                </picture>
+                
+                <div class="product-details__info">
+                    <p class="product-details__description">Мощный системный блок для игр в 4K и работы с 3D-графикой. Справится с любыми современными задачами на ультра-настройках.</p>
+                    <p class="product-details__price">219 990 ₽</p>
+                    <a class="product-details__button button button--primary" href="order.html">Оформить заказ</a>
+                </div>
+            </div>
+        </article>
+
+        <section class="product-specs">
+            <h2 class="product-specs__title" id="product-specs-title">Технические характеристики</h2>
+            <table class="specs-table">
+                <caption class="specs-table__caption">Подробная спецификация комплектующих</caption>
+                <thead class="specs-table__head">
+                    <tr class="specs-table__row">
+                        <th class="specs-table__header" scope="col">Компонент</th>
+                        <th class="specs-table__header" scope="col">Модель</th>
+                    </tr>
+                </thead>
+                <tbody class="specs-table__body">
+                    <tr class="specs-table__row">
+                        <th class="specs-table__cell" scope="row">Процессор</th>
+                        <td class="specs-table__cell">Intel Core i7-14700KF</td>
+                    </tr>
+                    <tr class="specs-table__row">
+                        <th class="specs-table__cell" scope="row">Видеокарта</th>
+                        <td class="specs-table__cell">GeForce RTX 4080 Super 16GB</td>
+                    </tr>
+                    <tr class="specs-table__row">
+                        <th class="specs-table__cell" scope="row">Оперативная память</th>
+                        <td class="specs-table__cell">32 ГБ DDR5 6000 MHz</td>
+                    </tr>
+                    <tr class="specs-table__row">
+                        <th class="specs-table__cell" scope="row">Накопитель</th>
+                        <td class="specs-table__cell">2 ТБ NVMe M.2 SSD</td>
+                    </tr>
+                    <tr class="specs-table__row">
+                        <th class="specs-table__cell" scope="row">Гарантия</th>
+                        <td class="specs-table__cell">3 года (официальная)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">&copy; 2026 PcMarket. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
