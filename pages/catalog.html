@@ -6,6 +6,7 @@
     <meta name="description" content="Страница с каталогом компании PcMarket">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <script type="module" src="../js/main.js"></script>
     <title>Товары</title>
 </head>
 <body>
@@ -66,57 +67,7 @@
                 </form>
             </aside>
 
-            <section class="catalog" aria-label="Товары каталога">
-                <article class="catalog-card">
-                    <picture class="catalog-card__media">
-                        <source type="image/webp"
-                                srcset="../assets/img/gaming-pc-360.webp 360w, ../assets/img/gaming-pc-600.webp 600w, ../assets/img/gaming-pc.webp 736w"
-                                sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1439px) 200px, 250px">
-                        <img src="../assets/img/gaming-pc.jpg"
-                             srcset="../assets/img/gaming-pc-360.jpg 360w, ../assets/img/gaming-pc-600.jpg 600w, ../assets/img/gaming-pc.jpg 736w"
-                             sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1439px) 200px, 250px"
-                             width="736" height="981" loading="lazy"
-                             alt="Игровой компьютер PcMarket Ultra" class="catalog-card__image">
-                    </picture>
-                    <div class="catalog-card__content">
-                        <h2 class="catalog-card__title">Игровой ПК PcMarket Ultra</h2>
-                        <p class="catalog-card__description">
-                        Мощный системный блок для игр в 4K и работы с 3D-графикой. Оснащён процессором Intel Core i7-14700KF, видеокартой GeForce RTX 4080 Super 16GB, 32 ГБ быстрой оперативной памяти DDR5 и скоростным накопителем NVMe SSD на 2 ТБ.
-                        </p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Гарантия:</strong> 3 года</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">В наличии:</strong> Есть</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Цена:</strong> 219 990 ₽</p>
-                        <a href="order.html" class="catalog-card__link button button--primary">Купить</a>
-                        <a href="product.html" class="catalog-card__link button button--secondary">Подробнее</a>
-                    </div>
-                </article>
-
-                <hr>
-
-                <article class="catalog-card">
-                    <picture class="catalog-card__media">
-                        <source type="image/webp"
-                                srcset="../assets/img/rtx4070-360.webp 360w, ../assets/img/rtx4070.webp 499w"
-                                sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1439px) 200px, 250px">
-                        <img src="../assets/img/rtx4070.jpeg"
-                             srcset="../assets/img/rtx4070-360.jpeg 360w, ../assets/img/rtx4070.jpeg 499w"
-                             sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1439px) 200px, 250px"
-                             width="499" height="400" loading="lazy"
-                             alt="Видеокарта GeForce RTX 4070 Super" class="catalog-card__image">
-                    </picture>
-                    <div class="catalog-card__content">
-                        <h2 class="catalog-card__title">Видеокарта GeForce RTX 4070 Super 12GB</h2>
-                        <p class="catalog-card__description"> 
-                        Высокопроизводительная видеокарта с поддержкой трассировки лучей и DLSS 3.5. Эффективная трёхвентиляторная система охлаждения, низкий уровень шума под нагрузкой и 12 ГБ видеопамяти стандарта GDDR6X для комфортного гейминга в 2K-разрешении.
-                        </p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Гарантия:</strong> 3 года</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">В наличии:</strong> Осталось мало</p>
-                        <p class="catalog-card__detail"><strong class="catalog-card__label">Цена:</strong> 67 490 ₽</p>
-                        <a href="order.html" class="catalog-card__link button button--primary">Купить</a>
-                        <a href="product.html" class="catalog-card__link button button--secondary">Подробнее</a>
-                    </div>
-                </article>
-            </section>
+            <section class="catalog" aria-label="Товары каталога"></section>
         </div>
     </main>
 

@@ -1,3 +1,5 @@
+import { initCatalog } from './catalog.js';
+
 const modalFunc = (modal, openBtn, closeBtn) => {
     openBtn.addEventListener('click', () => { modal.showModal() });
 
@@ -10,4 +12,8 @@ const openBtn = document.getElementById('open-modal-btn');
 const closeBtn = document.getElementById('close-modal-btn');
 
 
-modalFunc(modal, openBtn, closeBtn)
+if (modal && openBtn && closeBtn) {
+    modalFunc(modal, openBtn, closeBtn);
+}
+
+initCatalog();
